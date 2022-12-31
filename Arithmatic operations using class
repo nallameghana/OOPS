@@ -1,0 +1,55 @@
+//Perform arithmatic operations using class
+#include <iostream>
+using namespace std;
+class calc
+{
+    public:
+    int a, b;
+    int add(int a, int b)
+    {
+        int c;
+        c = a + b;
+        return c;
+    }
+    int sub(int a, int b)
+    {
+        int c;
+        c = a - b;
+        return c;
+    }
+    int mult(int a, int b)
+    {
+        int c;
+        c = a * b;
+        return c;
+    }
+    int divi(int a, int b)
+    {
+        int c;
+        c = (float)a / b;
+        return c;
+    }
+    int rem(int a, int b)
+    {
+        int c;
+        c = a % b;
+        return c;
+    }
+};
+int main()
+{
+    int a, b, m;
+    calc n;                    // n is the reference to the class.Using n in this we can access member functions.
+    cout<<"Enter a, b : ";     //n is the object.
+    cin>>a>>b;
+    m = n.add(a, b);
+    cout<<"Sum = "<<m<<endl;
+    m = n.sub(a, b);
+    cout<<"Sub = "<<m<<endl;
+    m = n.mult(a, b);
+    cout<<"Mult = "<<m<<endl;
+    m = n.divi(a, b);
+    cout<<"Div = "<<m<<endl;
+    m = n.rem(a, b);
+    cout<<"Rem = "<<m<<endl;
+}
