@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+class Area
+{
+    public:
+    int c;
+    public:
+    int areaofrec(int l, int b);
+};
+int Area::areaofrec(int l, int b)
+{
+    c = l*b;
+    return c;
+}
+int main()
+{
+    Area m;
+    int l;
+    int b;
+    int n;
+    cout<<"Enter l, b values : "<<endl;
+    cin>>l>>b;
+    n = m.areaofrec(l, b);
+    cout<<n<<endl;
+}
