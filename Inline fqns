@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+class inl
+{
+    public:
+    inline int add(int a, int b)
+    {
+        return a + b;
+    }
+};
+int main()
+{
+    inl m;
+    int a, b, n;
+    cout<<"Enter 2 nos : "<<endl;
+    cin>>a>>b;
+    n = m.add(a, b);
+    cout<<"add = "<<n<<endl;
+}
