@@ -18,7 +18,7 @@ int main()
         myfile<<"Hi\n";
     }
     myfile.close();
-    myfile.open("Sample.txt", ios::in); //Reading from a myfile
+    myfile.open("Sample.txt", ios::in); //Reading from a file
     string line;
     if(myfile)
     {
